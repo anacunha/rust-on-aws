@@ -12,6 +12,42 @@ Para saber mais sobre Rust na AWS, acesse o [AWS Developer Center](https://aws.a
 
 ## AWS Lambda Rust Runtime
 
+1. Install [cargo-lambda](https://github.com/cargo-lambda/cargo-lambda)
+
+```shell
+brew tap cargo-lambda/cargo-lambda
+brew install cargo-lambda
+```
+
+2. Create a function
+
+```shell
+cargo lambda new FUNCTION_NAME
+```
+
+3. Build
+
+```shell
+cargo lambda build --release
+cargo lambda build --release --arm64
+```
+
+4. Deploy
+
+```shell
+cargo lambda deploy \
+  --iam-role arn:aws:iam::XXXXXXXXXXXXX:role/your_lambda_execution_role
+```
+
+5. Test
+
+```shell
+cargo lambda invoke --remote \
+  --data-ascii '{"command": "hi"}' \
+  --output-format json \
+  FUNCTION_NAME
+```
+
 - [Rust Runtime for AWS Lambda](https://github.com/awslabs/aws-lambda-rust-runtime)
 - [cargo-lambda](https://github.com/cargo-lambda/cargo-lambda)
 
