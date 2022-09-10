@@ -13,6 +13,7 @@ Para saber mais sobre Rust na AWS, acesse o [AWS Developer Center](https://aws.a
 ## AWS Lambda Rust Runtime
 
 - [Rust Runtime for AWS Lambda](https://github.com/awslabs/aws-lambda-rust-runtime)
+- [cargo-lambda](https://github.com/cargo-lambda/cargo-lambda)
 
 ## Links
 
