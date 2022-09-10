@@ -11,3 +11,7 @@ Para saber mais sobre Rust na AWS, acesse o [AWS Developer Center](https://aws.a
 ## Links
 
 - [Rust on AWS](https://aws.amazon.com/developer/language/rust/)
+
+### Vídeos
+
+- [AWS re:Invent 2021 - Building with the new AWS SDKs for Rust, Kotlin, and Swift](https://youtu.be/Nhk1K1AjYvg)
