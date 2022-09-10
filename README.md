@@ -59,6 +59,7 @@ cargo lambda invoke --remote \
 
 - [Innovating with Rust](https://aws.amazon.com/blogs/opensource/innovating-with-rust/)
 - [A New AWS SDK for Rust – Alpha Launch](https://aws.amazon.com/blogs/developer/a-new-aws-sdk-for-rust-alpha-launch/)
+- [How our AWS Rust team will contribute to Rust’s future successes](https://aws.amazon.com/blogs/opensource/how-our-aws-rust-team-will-contribute-to-rusts-future-successes/)
 - [Why AWS loves Rust, and how we’d like to help](https://aws.amazon.com/blogs/opensource/why-aws-loves-rust-and-how-wed-like-to-help/)
 - [Rust Runtime for AWS Lambda](https://aws.amazon.com/blogs/opensource/rust-runtime-for-aws-lambda/)
 
