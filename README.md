@@ -55,13 +55,17 @@ cargo lambda invoke --remote \
 
 - [Rust on AWS](https://aws.amazon.com/developer/language/rust/)
 
-### Vídeos
-
-- [AWS re:Invent 2021 - Building with the new AWS SDKs for Rust, Kotlin, and Swift](https://youtu.be/Nhk1K1AjYvg)
-
 ### Blogs
 
 - [Innovating with Rust](https://aws.amazon.com/blogs/opensource/innovating-with-rust/)
 - [A New AWS SDK for Rust – Alpha Launch](https://aws.amazon.com/blogs/developer/a-new-aws-sdk-for-rust-alpha-launch/)
 - [Why AWS loves Rust, and how we’d like to help](https://aws.amazon.com/blogs/opensource/why-aws-loves-rust-and-how-wed-like-to-help/)
 - [Rust Runtime for AWS Lambda](https://aws.amazon.com/blogs/opensource/rust-runtime-for-aws-lambda/)
+
+### Vídeos
+
+- [Rust Linz June 2022 - How AWS is building the Rust SDK and how you can use it today (Zelda Hessler)](https://youtu.be/N0XMjokwTIM)
+- [AWS Summit San Francisco 2022 - Sustainability with Rust](https://youtu.be/BHRLbMCpmtY)
+- [AWS re:Invent 2021 - Building with the new AWS SDKs for Rust, Kotlin, and Swift](https://youtu.be/Nhk1K1AjYvg)
+- [AWS re:Invent 2021 - Using Rust to minimize environmental impact](https://youtu.be/yQZaBtUjQ1w)
+- [AWS re:Invent 2020: Next-gen networking infrastructure with Rust and Tokio](https://youtu.be/MZyleK8elPk)
