@@ -10,6 +10,10 @@ Para saber mais sobre Rust na AWS, acesse o [AWS Developer Center](https://aws.a
 - [Exemplos de código](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rust_dev_preview)
 - [Roadmap](https://github.com/orgs/awslabs/projects/50/views/1)
 
+## AWS Lambda Rust Runtime
+
+- [Rust Runtime for AWS Lambda](https://github.com/awslabs/aws-lambda-rust-runtime)
+
 ## Links
 
 - [Rust on AWS](https://aws.amazon.com/developer/language/rust/)
