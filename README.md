@@ -5,9 +5,10 @@ Para saber mais sobre Rust na AWS, acesse o [AWS Developer Center](https://aws.a
 ## AWS Rust SDK
 
 - [AWS Rust SDK](https://aws.amazon.com/sdk-for-rust/)
-- [GitHub repo](https://github.com/awslabs/aws-sdk-rust)
 - [Developer Guide](https://docs.aws.amazon.com/sdk-for-rust/latest/dg/welcome.html)
+- [GitHub repo](https://github.com/awslabs/aws-sdk-rust)
 - [Exemplos de código](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rust_dev_preview)
+- [Roadmap](https://github.com/orgs/awslabs/projects/50/views/1)
 
 ## Links
 
