@@ -26,4 +26,6 @@ Para saber mais sobre Rust na AWS, acesse o [AWS Developer Center](https://aws.a
 ### Blogs
 
 - [Innovating with Rust](https://aws.amazon.com/blogs/opensource/innovating-with-rust/)
+- [A New AWS SDK for Rust – Alpha Launch](https://aws.amazon.com/blogs/developer/a-new-aws-sdk-for-rust-alpha-launch/)
 - [Why AWS loves Rust, and how we’d like to help](https://aws.amazon.com/blogs/opensource/why-aws-loves-rust-and-how-wed-like-to-help/)
+- [Rust Runtime for AWS Lambda](https://aws.amazon.com/blogs/opensource/rust-runtime-for-aws-lambda/)
