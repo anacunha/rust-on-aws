@@ -4,6 +4,105 @@ Para saber mais sobre Rust na AWS, acesse o [AWS Developer Center](https://aws.a
 
 ## AWS Rust SDK
 
+### Upload file to Amazon S3 bucket
+
+1. Create new project
+
+```shell
+cargo new aws_rust_sdk
+```
+
+2. Add dependencies (tokio, aws-config, aws-sdk-s3)
+
+```shell
+cargo add tokio@1 --features full
+cargo add aws-config
+cargo add aws-sdk-s3
+```
+
+Your dependencies on `Cargo.toml` will look like this:
+
+```toml
+[dependencies]
+aws-config = "0.48.0"
+aws-sdk-s3 = "0.18.0"
+tokio = { version = "1", features = ["full"] }
+```
+
+3. We will use [tokio](https://tokio.rs) as our asynchronous runtime:
+
+```rust
+#[tokio::main]
+async fn main() {
+  // Our code will go here
+}
+```
+
+4. Create an `SdkConfig` by loading the default configuration from the environment:
+
+```rust
+let config = aws_config::load_from_env().await;
+```
+
+5. Create and `aws_sdk_s3::Client`:
+
+```rust
+let client = aws_sdk_s3::Client::new(&config);
+```
+
+6. Create a `ByteStream` from the file that will be uploaded:
+
+```rust
+let body = aws_sdk_s3::types::ByteStream::from_path(std::path::Path::new("test.txt")).await;
+```
+
+7. Create a [`PutObject`](https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutObject.html) request:
+
+```rust
+let response = client
+    .put_object()
+    .bucket("bucket-name")
+    .key("key")
+    .body(body.unwrap())
+    .send()
+    .await?;
+```
+
+8. Get the object version:
+
+```rust
+let version = response.version_id().unwrap();
+println!("Uploaded file version {}", version);
+```
+
+Our entire `main.rs` file will look like this:
+
+```rust
+use aws_sdk_s3::{types::ByteStream, Client, Error};
+use std::path::Path;
+
+#[tokio::main]
+async fn main() -> Result<(), Error> {
+    let config = aws_config::load_from_env().await;
+    let client = Client::new(&config);
+
+    let body = ByteStream::from_path(Path::new("test.txt")).await;
+
+    let response = client
+        .put_object()
+        .bucket("tech-day-ifood")
+        .key("demo")
+        .body(body.unwrap())
+        .send()
+        .await?;
+
+    let version = response.version_id().unwrap();
+    println!("Uploaded file version {}", version);
+
+    Ok(())
+}
+```
+
 - [AWS Rust SDK](https://aws.amazon.com/sdk-for-rust/)
 - [Developer Guide](https://docs.aws.amazon.com/sdk-for-rust/latest/dg/welcome.html)
 - [GitHub repo](https://github.com/awslabs/aws-sdk-rust)
