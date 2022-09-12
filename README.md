@@ -1,6 +1,8 @@
-# Rust na AWS
+# Rust on AWS
 
-Para saber mais sobre Rust na AWS, acesse o [AWS Developer Center](https://aws.amazon.com/developer/language/rust/).
+## Prerequisites
+
+You will need to create an AWS accounts and setup your access keys. Follow the instructions [here](https://docs.aws.amazon.com/sdk-for-rust/latest/dg/getting-started.html#getting-started-prerequisites).
 
 ## AWS Rust SDK
 
@@ -162,7 +164,7 @@ cargo lambda invoke --remote \
 - [Why AWS loves Rust, and how we’d like to help](https://aws.amazon.com/blogs/opensource/why-aws-loves-rust-and-how-wed-like-to-help/)
 - [Rust Runtime for AWS Lambda](https://aws.amazon.com/blogs/opensource/rust-runtime-for-aws-lambda/)
 
-### Vídeos
+### Videos
 
 - [Rust Linz June 2022 - How AWS is building the Rust SDK and how you can use it today (Zelda Hessler)](https://youtu.be/N0XMjokwTIM)
 - [AWS Summit San Francisco 2022 - Sustainability with Rust](https://youtu.be/BHRLbMCpmtY)
